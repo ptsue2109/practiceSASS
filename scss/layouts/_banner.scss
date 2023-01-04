@@ -1,0 +1,58 @@
+.wrapper {
+  .main-content {
+    .slider {
+      &-item {
+        .banner {
+          position: absolute;
+          top: 92%;
+          left: 50%;
+          transform: translateX(-50%);
+
+          .row {
+            margin: 0;
+            margin-left: 5px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            background : #fff;
+            .banner-item {
+              height: 100%;
+              @include col(33.333%);
+              padding: 0;
+              @include flex();
+              flex-direction: column;
+              font-family: "Poppins";
+              position: relative;
+
+              &-content {
+                position: absolute;
+                top: 50%;
+                text-align: center;
+                width: 100%;
+                padding: 10px 50px;
+
+                .banner-item-title {
+                  color: #000;
+                  font-size: 18px;
+                  font-weight: bold;
+                  text-transform: uppercase;
+                  margin-bottom: 20px;
+                }
+
+                .banner-item-summary {
+                  color: #898989;
+
+                  font-size: 14px;
+                  text-align: center;
+                }
+               
+              }
+
+
+
+
+            }
+          }
+        }
+      }
+    }
+  }
+}

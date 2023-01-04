@@ -1,0 +1,105 @@
+@import "../source/mixin";
+.wrapper {
+  .main-content {
+    .product-wrapper {
+      padding-top: 524px;
+
+      .container {
+        .tab-bar {
+          border-bottom: 1px solid #ddd;
+          ul {
+            display: flex;
+
+            li {
+              text-align: center;
+              font-family: "Poppins";
+              text-transform: uppercase;
+              font-size: 20px;
+              font-weight: bold;
+
+              line-height: 1.333;
+              padding-right: 18px;
+              padding-left: 18px;
+              padding-bottom: 15px;
+
+              &:hover {
+                color: #dd2f31;
+                border-bottom: 1px solid #dd2f31;
+                cursor: pointer;
+                z-index: 100;
+              }
+            }
+          }
+        }
+
+        .product {
+          .row {
+            .product-item {
+              @include col(25%);
+
+              padding-top: 42px;
+
+              .product-item-inner {
+                padding: 20px 20px 30px 30px;
+                position: relative;
+                &:hover {
+                  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                  cursor: pointer;
+
+                  .product-icon {
+                    display: block;
+                  }
+                }
+
+                .product-item-img {
+                  img {
+                    margin-left: -25px;
+                    margin-top: -17px;
+                    height: 100%;
+                    width: 115%;
+                    padding-bottom: 30px;
+                  }
+                }
+
+                .product-item-title {
+                  font-family: "Poppins";
+                  font-size: 14px;
+                  font-weight: 400;
+                }
+
+                .product-item-price {
+                  font-family: "Poppins";
+                  font-size: 14px;
+                  font-weight: bold;
+                }
+
+                .product-icon {
+                  display: none;
+                  position: absolute;
+                  top: 20px;
+                  right: 20px;
+
+                  i {
+                    font-size: 13px;
+                    display: block;
+                    padding: 10px 9px;
+                    border: 1px solid #ddd;
+                    margin-bottom: 15px;
+                    border-radius: 5px 0 5px 0;
+                    color: #777777;
+
+                    &:hover {
+                      background: #dd2f31;
+                      color: #fff;
+                      border: none;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

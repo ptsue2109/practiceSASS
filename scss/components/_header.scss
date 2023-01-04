@@ -1,0 +1,70 @@
+@import "../source/mixin";
+.wrapper {
+  header {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 21px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .logo {
+        padding-left: 10px;
+        padding-top: 2px;
+      }
+
+      nav {
+        padding-right: 34px;
+        padding-top: 4px;
+        ul {
+          width: 592px;
+          display: flex;
+          justify-content: space-between;
+          .nav-x {
+            display: none;
+          }
+          li {
+            color: #fff;
+            font-size: 16px;
+            font-family: "Poppins";
+            font-weight: 300;
+          }
+        }
+      }
+
+      .right-header {
+        display: flex;
+        align-items: center;
+        padding-left: 12px;
+        z-index: 10;
+        i {
+          border-right: 1px solid #fff;
+          padding: 0 26px;
+          font-size: 16px;
+          color: #fff;
+
+          &:first-child {
+            padding-left: 0;
+          }
+          &:last-child {
+            padding-right: 0px;
+            border-right: none;
+          }
+        }
+      }
+
+      .menu-mobile {
+        display: none;
+      }
+
+      .down-btn-mobile {
+        display: none;
+      }
+    }
+  }
+}

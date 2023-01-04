@@ -1,0 +1,88 @@
+.wrapper {
+  .main-content {
+    .feedback {
+      font-family: "Poppins";
+      margin-top: 115px;
+
+      .feedback-title {
+        font-size: 36px;
+
+        color: #000;
+        font-weight: bold;
+        line-height: 0.833;
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      .feedback-slider {
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 147px;
+        .feedback-slider-item {
+          &-inner {
+            width: 67%;
+            margin: 0 auto;
+            .feedback-avt {
+              img {
+                margin: 0 auto;
+              }
+              margin-bottom: 30px;
+            }
+
+            .feedback-summary {
+              font-size: 18px;
+              color: rgb(119, 119, 119);
+              line-height: 1.667;
+              text-align: center;
+              margin-bottom: 24px;
+            }
+
+            .username {
+              text-align: center;
+              font-size: 18px;
+              font-weight: bold;
+              color: #000;
+              text-transform: uppercase;
+              line-height: 1.667;
+              margin-bottom: 6px;
+            }
+
+            .user-react {
+              text-align: center;
+              font-size: 14px;
+              color: rgb(119, 119, 119);
+            }
+          }
+        }
+
+        .slick-dots {
+          position: absolute;
+          left: 50%;
+          bottom: 97px;
+          transform: translateX(-50%);
+          display: flex !important;
+          gap: 0 10px;
+
+          button {
+            font-size: 0;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: none;
+            outline: none;
+            background: #cccccc;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+
+          .slick-active {
+            button {
+              background: #dd2f31;
+            }
+          }
+        }
+      }
+    }
+  }
+}

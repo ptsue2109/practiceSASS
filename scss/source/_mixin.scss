@@ -1,0 +1,19 @@
+@mixin flex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin transformer($scale) {
+    transform: $scale; 
+    -webkit-transform: $scale;  
+    -ms-transform: $scale;
+    -moz-transform: $scale;
+    -o-transform: $scale;
+}
+
+@mixin col($width) {
+    width: $width;
+    padding: 0 15px;
+    
+}

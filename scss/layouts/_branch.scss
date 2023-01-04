@@ -1,0 +1,14 @@
+.wrapper {
+    .main-content {
+        .branch {
+            
+            .row {
+                .branch-item {
+                    @include col(16.667%);
+                    @include flex();   
+                    height: 150px;
+                }
+            }
+        }
+    }
+}   
